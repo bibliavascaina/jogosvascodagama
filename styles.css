@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #004d98;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.poster-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.poster-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.poster-item:hover {
+    transform: scale(1.05);
+}
+
+.poster-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.poster-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.poster-info h2 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.poster-info p {
+    margin: 0;
+    color: #777;
+}
+
+.donation-section, .social-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.donation-section .pix-key {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.social-section h2 {
+    margin-bottom: 10px;
+}
+
+.social-section a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer {
+    background-color: #004d98;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}

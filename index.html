@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos do Vasco da Gama</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function searchGames() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let posters = document.getElementsByClassName('poster-item');
+
+            for (let i = 0; i < posters.length; i++) {
+                let title = posters[i].getElementsByTagName('h2')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    posters[i].style.display = "";
+                } else {
+                    posters[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jogos do Vasco da Gama</h1>
+        <p>Site feito pelo Bíblia Vascaína</p>
+    </header>
+
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Busque por uma partida...">
+        </div>
+
+        <div class="poster-gallery">
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1jj04ESkVi70cZLuKfSFdlXSAKc6UEwU2/view?usp=drive_link" target="_blank">
+                    <img src="https://media.vasco.com.br/static/2024/08/53915043601_6312b63bf6_o-scaled.jpg" alt="Vasco da Gama 2x0 Fluminense">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 2x0 Fluminense</h2>
+                        <p>10 Agosto de 2024</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1y2bFs1S4epiU4DvsL77Fkw6FSA6nDIWo/view?usp=drive_link" target="_blank">
+                    <img src="https://vasconoticias.com.br/wp-content/uploads/2024/08/vasco-x-atletico-go-06.jpg" alt="Vasco da Gama 1x0 Atletico-GO">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 1x0 Atletico-GO</h2>
+                        <p>6 Agosto de 2024</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/10qrCx52OTjyOGiI1OmmHj7izxtynZ4Yt/view?usp=drive_link" target="_blank">
+                    <img src="https://images2.minutemediacdn.com/image/upload/c_crop,w_4000,h_2250,x_0,y_284/c_fill,w_1440,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_pt-BR_international_web/01j1k504cbb6y4ezw2j9.jpg" alt="Vasco da Gama 1-1 Botafogo">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 1-1 Botafogo</h2>
+                        <p>29 Junho de 2024</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1pW8lFr27p4xTGIC4rnfSEKwqkL96F_4x/view?usp=drive_link" target="_blank">
+                    <img src="https://lncimg.lance.com.br/uploads/2024/04/AGIF24041417154810-scaled-aspect-ratio-512-320.jpg" alt="Vasco da Gama 2 x 0 Gremio">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 2 x 0 Gremio</h2>
+                        <p>14 Abril de 2024</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1tvpF1dG6P6Oondwx_LpNEl6r30x5elcE/view?usp=drive_link" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTEclBbxpxoTLodOoR63SrWJzvPCJcRNKYtg&s" alt="Vasco da Gama 2x2 Bragantino">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 2x2 Bragantino</h2>
+                        <p>Data Indefinida</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1H_XRx4b5eHoMd3Od1mR6X7iU6M-vofhi/view?usp=drive_link" target="_blank">
+                    <img src="https://images.futebolinterior.com.br/2024/07/Vasco-vence-corinthians-e-quebra-tabu-de-14-anos.jpeg" alt="Vasco da Gama 2 - 0 Corinthians">
+                    <div class="poster-info">
+                        <h2>Vasco da Gama 2 - 0 Corinthians</h2>
+                        <p>11 Julho de 2024</p>
+                    </div>
+                </a>
+            </div>
+            <div class="poster-item">
+                <a href="https://drive.google.com/file/d/1ith40DbqZB_KCZAPwmHZQYM9MQyHFWTD/view?usp=drive_link" target="_blank">
+                    <img src="https://cnbinfo.com.br/wp-content/uploads/2024/07/GT3QyiIWwAAuIgH-scaled.jpeg" alt="Atletico GO 1 x 1 Vasco da Gama">
+                    <div class="poster-info">
+                        <h2>Atletico GO 1 x 1 Vasco da Gama</h2>
+                        <p>31 Julho de 2024</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section class="donation-section">
+            <h2>Faça uma Doação</h2>
+            <p>Ajude o site a se manter no ar com uma doação via PIX:</p>
+            <p class="pix-key">Chave PIX: e5317a7a-a4e3-4d2c-a39c-f755dd42248c</p>
+        </section>
+
+        <section class="social-section">
+            <h2>Siga-nos nas redes sociais</h2>
+            <a href="https://x.com/bibliavascaina" target="_blank">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/031/737/227/small/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png" alt="Twitter" width="40px" height="40px">
+            </a>
+            <a href="https://instagram.com/bibliavascaina" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40px" height="40px">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grupo Globo. Todos os direitos reservados.</p>
+        <p>Este site foi feito pelo Bíblia Vascaína.</p>
+    </footer>
+</body>
+</html>
